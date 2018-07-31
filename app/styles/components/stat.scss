@@ -1,0 +1,106 @@
+.stat {
+	position: relative;
+	height: 0;
+	padding-top: 140%;
+	&__wrp {
+		margin-top: 40px;
+	}
+	&__inner {
+		width: 100%;
+		max-width: 350px;
+	}
+	&__map {
+		position: absolute;
+		top: 3%;
+		right: 5%;
+		width: 75%;
+		opacity: .5;
+	}
+	&__pin {
+		position: absolute;
+		display: block;
+		width: 22px;
+		height: 30px;
+		transform: translate(-50%, -100%);
+		cursor: pointer;
+		&:nth-child(2) {
+			top: 11%;
+			left: 48%;
+		}
+		&:nth-child(3) {
+			top: 27%;
+			left: 69%;
+		}
+		&:nth-child(4) {
+			top: 59%;
+			left: 80%;
+		}
+	}
+	&__legend {
+		position: absolute;
+		padding-left: 0;
+		top: 70%;
+		list-style: none;
+		&Item {
+			position: relative;
+			padding-left: 25px;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: $fontL;
+			&:before {
+				content: '';
+				display: block;
+				width: 14px;
+				height: 14px;
+				position: absolute;
+				left: 0;
+				top: 2px;
+			}
+			&:nth-child(1)::before {
+				background: #f1c406;
+			}
+			&:nth-child(2)::before {
+				background: #f17682;
+			}
+			&:nth-child(3)::before {
+				background: #1fd3f9;
+			}
+			&:nth-child(4)::before {
+				background: #2458a6;
+			}
+		}
+	}
+	&__chart {
+		position: absolute;
+		left: 0;
+		top: 40%;
+		width: 100px;
+		height: 100px;
+		img {
+			cursor: pointer;
+			position: absolute;
+			transition: $trs;
+			&:hover {
+				transform: scale(1.1);
+				z-index: 100;
+			}
+		}
+		.piechart {
+			&-1 {
+				bottom: 0;
+				left: 0;
+			}
+			&-2 {
+				bottom: 9px;
+				right: 0;
+			}
+			&-3 {
+				left: 5px;
+			}
+			&-4 {
+				top: 2px;
+				right: 10px;
+			}
+		}
+	}
+}

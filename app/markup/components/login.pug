@@ -1,0 +1,36 @@
+.login__wrp
+	form.login.border
+		.login__imgWrp.clearfix
+			img(src="img/user__avatar.png", alt="").login__img
+		.login__input.login__input--user.border.reg
+			input(type="text" placeholder="username")
+			label
+				i.fas.fa-user
+		.login__input.login__input--pass.border.reg
+			input(type="password" placeholder="password")
+			label
+				i.fas.fa-key
+		button(type="submit").login__submit Login
+		.clearfix
+			.row
+				.col-md-6.col-xs-6
+					input(type="checkbox" id="rememberme")
+					label(for="rememberme") Remember me
+				.col-md-6.col-xs-6
+					a(href="#").login__passReminder Forgot password?
+		p OR
+		.login__socialWrp
+			p Select social network to get started
+			ul.login__social
+				li.login__socialItem
+					a(href="").login__socialLink
+						i.fab.fa-facebook-f
+				li.login__socialItem
+					a(href="").login__socialLink
+						i.fab.fa-twitter
+				li.login__socialItem
+					a(href="").login__socialLink
+						i.fab.fa-google-plus-g
+				li.login__socialItem
+					a(href="").login__socialLink
+						i.fab.fa-linkedin-in

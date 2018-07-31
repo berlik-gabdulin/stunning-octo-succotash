@@ -1,0 +1,47 @@
+.join {
+	&__wrp {
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+	&__input {
+		display: block;
+		float: left;
+		padding: 0 37px 0 13px;
+		height: 40px;
+		border: 4px solid #fff;
+		margin-right: 9px;
+		width: calc(100% - 105px);
+		font: $fontL;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: transparent;
+		transition: $trs;
+		&:focus,
+		&:hover,
+		&:active {
+			font: $font;
+			& + label {
+				opacity: 1;
+			}
+			&::placeholder {
+				opacity: 1;
+			}
+		}
+		&::placeholder {
+			opacity: .5;
+			color: #fff;
+			transition: $trs;
+		}
+	}
+	&__button {
+		display: block;
+		height: 40px;
+		width: 96px;
+		border: none;
+		background: #fff;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: $primColor;
+		transition: $trs;
+	}
+}

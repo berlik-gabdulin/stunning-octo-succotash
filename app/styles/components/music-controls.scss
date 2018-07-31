@@ -1,0 +1,37 @@
+.music {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 17px;
+	padding-bottom: 34px;
+	&__wrp {
+
+	}
+	button {
+		display: block;
+		background-color: transparent;
+		transition: $trs;
+		border-radius: 50%;
+		font-size: 18px;
+		&:hover {
+			background: $secColor;
+			color: $primColor;
+		}
+	}
+	&__play {
+		margin: 0 9px;
+		width: 56px;
+		height: 56px;
+	}
+	&__pause,
+	&__stop {
+		width: 46px;
+		height: 46px;
+	}
+	&__backward,
+	&__forward {
+		margin: 0 9px;
+		width: 36px;
+		height: 36px;
+	}
+}

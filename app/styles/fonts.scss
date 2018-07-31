@@ -1,0 +1,19 @@
+@import "bourbon";
+/*
+	100 - Extra Light or Ultra Light
+	200 - Light or Thin
+	300 - Book or Demi
+	400 - Normal or Regular
+	500 - Medium
+	600 - Semibold, Demibold
+	700 - Bold
+	800 - Black, Extra Bold or Heavy
+	900 - Extra Black, Fat, Poster or Ultra Black
+*/
+
+@include font-face("NerisSemiBold", "../fonts/neris-semibold/neris-semibold", $file-formats: eot woff svg ttf);
+@include font-face("NerisLight", "../fonts/neris-light/neris-light", $file-formats: eot woff svg ttf);
+@include font-face("NerisThin", "../fonts/neris-thin/neris-thin", $file-formats: eot woff svg ttf);
+@include font-face("HelveticaNeueMedium", "../fonts/helveticaneuecyr-medium/helveticaneuecyr-medium", $file-formats: eot woff svg ttf);
+@include font-face("HelveticaNeueLight", "../fonts/helveticaneuecyr-light/helveticaneuecyr-light", $file-formats: eot woff svg ttf);
+@include font-face("HelveticaNeueThin", "../fonts/helveticaneuecyr-thin/helveticaneuecyr-thin", $file-formats: eot woff svg ttf);

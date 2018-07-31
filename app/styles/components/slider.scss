@@ -1,0 +1,120 @@
+.slider {
+	&__wrp {
+		margin-top: -80px;
+		margin-bottom: 40px;
+		@media #{$medium} {
+			margin-top: 50px;
+		}
+	}
+	&__slide {
+		position: relative;
+		display: none;
+		padding: 100px 80px;
+		text-transform: uppercase;
+		min-height: 320px;
+		&.slick-slide {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&:before {
+			position: absolute;
+			display: block;
+			content: '';
+			background: rgba(0, 0, 0, .5);
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+	&__title {
+		margin: 0;
+		font-family: $fontHT;
+		font-size: 20px;
+		max-width: 280px;
+	}
+	&__subtitle {
+		margin: 0 0 15px;
+		font-family: $fontHT;
+		font-size: 14px;
+		max-width: 280px;
+		text-transform: none;
+	}
+	&__more {
+		font-size: 12px;
+		display: inline-block;
+		width: 100px;
+		height: 40px;
+		color: #fff;
+		padding: 10px 15px;
+		border: 2px solid #fff;
+		transition: $trs;
+		&:hover {
+			background:#fff;
+			color: $primColor;
+			text-decoration: none;
+		}
+	}
+	&__bgimg {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		z-index: -2;
+	}
+	.slick {
+		&-arrow {
+			height: 40px;
+			width: 40px;
+			&:before {
+				height: 40px;
+				width: 40px;
+				background: url(../img/bigsliderarrows.png) no-repeat;
+			}
+		}
+		&-prev {
+			left: 10px;
+			&:before {
+				background: url(../img/bigsliderarrows.png) no-repeat;
+			}
+		}
+		&-next {
+			right: 10px;
+			&:before {
+				background: url(../img/bigsliderarrows.png) no-repeat;
+				background-position: -41px 0;
+			}
+		}
+		&-dots {
+			bottom: -22px;
+			li {
+				width: 10px;
+				height: 10px;
+				margin: 0 2.5px;
+				button {
+					width: 10px;
+					height: 10px;
+					&:before {
+						content: '';
+						width: 10px;
+						height: 10px;
+						border: 2px solid #fff;
+					}
+				}
+			}
+		}
+
+		&-active {
+			button:before {
+				background: #fff;
+			}
+		}
+	}
+
+}

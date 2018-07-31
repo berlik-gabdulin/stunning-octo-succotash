@@ -1,0 +1,48 @@
+.video {
+	position: relative;
+	margin-bottom: 30px;
+	&__title {
+		position: absolute;
+		padding: 16px;
+		top: 0;
+		width: 100%;
+		margin: 0;
+		text-transform: uppercase;
+		background: rgba(0, 0, 0, .34);
+		font-size: 16px;
+	}
+	&__preview {
+		width: 100%;
+	}
+	&__play {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		color: #fff;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		border: 3px solid #fff;
+		font-size: 30px;
+		transform: translate(-50%, -50%);
+		transition: $trs;
+		&:hover {
+			background: $secColor;
+			color: $primColor;
+		}
+	}
+	.ghinda-video-controls {
+		padding: 5px 15px !important;
+		position: absolute !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		display: block !important;
+		background: rgba(0, 0, 0, .45) !important;
+	}
+
+}

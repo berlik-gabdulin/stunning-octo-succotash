@@ -1,0 +1,78 @@
+.userprofile {
+	padding: 18px 21px 14px;
+	margin-bottom: 30px;
+	&__wrp {
+		
+	}
+	&__img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		&Wrp {
+			margin: 0 auto 20px;
+			height: 110px;
+			width: 110px;
+			border: 4px solid #fff;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+	&__name  {
+		font-size: 16px;
+		text-transform: uppercase;
+		font-family: $fontSB;
+
+	}
+	&__pos {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-family: $fontL;
+	}
+	&__follow {
+		&Wrp {
+			text-align: center;
+			text-transform: uppercase;
+		}
+		&Btn {
+			display: block;
+			height: 40px;
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 32px;
+			border: none;
+			background: #fff;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: $primColor;
+			transition: $trs;
+		}
+		&Val {
+			margin: 0;
+			font-family: $fontSB;
+		}
+		&Span {
+			margin: 0;
+			font-size: 12px;
+			font-family: $fontL;
+		}
+	}
+	&__followers {
+		height: 40px;
+		width: 145px;
+		padding-left: 40px;
+		padding-right: 8px;
+		margin-right: 15px;
+		border-right: 2px solid #fff;
+		background: url(../img/friends.png) no-repeat;
+		background-position: 1px center;
+		float: left;
+	}
+	&__following {
+		height: 40px;
+		float: left;
+		margin-right: -20px;
+	}
+}

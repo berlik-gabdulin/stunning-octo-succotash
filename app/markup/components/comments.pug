@@ -1,0 +1,40 @@
+.comments__wrp
+	.comments
+		.comments__comment.border.clearfix
+			a.comments__avatar(href="#" target="_target")
+				img(src="img/comment1.jpg", alt="")
+			.comments__content
+				p.comments__name michael derris
+				p.comments__message Glad your system is working, hope you have fun! :) 
+				.comments__info
+					.comments__date 2 days ago
+					button(type="button").comments__like 2
+						i.fas.fa-caret-up
+					span |
+					button(type="button").comments__dislike 0
+						i.fas.fa-caret-down
+					button(type="button").comments__reply Reply
+						i.fas.fa-reply
+		.comments__comment.comments__commentReply.border.clearfix
+			a.comments__avatar(href="#" target="_target")
+				img(src="img/comment2.jpg", alt="")
+			.comments__content
+				p.comments__name Jena miller
+				p.comments__message Glad your system is working, hope you have fun! :) 
+				.comments__info
+					.comments__date 2 days ago
+					button(type="button").comments__like 2
+						i.fas.fa-caret-up
+					span |
+					button(type="button").comments__dislike 0
+						i.fas.fa-caret-down
+					button(type="button").comments__reply Reply
+						i.fas.fa-reply
+
+		.comments__comment.border.clearfix
+			.comments__avatar
+				img(src="img/comment3.jpg", alt="")
+			.comments__content
+				p.comments__name michael derris
+				textarea.comments__text(placeholder="Enter your comment")
+				button.comments__button(type="submit") Write

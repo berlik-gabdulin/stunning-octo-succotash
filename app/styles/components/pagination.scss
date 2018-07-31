@@ -1,0 +1,36 @@
+.pagination {
+	&__wrp {
+		padding: 40px 0;
+	}
+	&__list {
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		text-align: center;
+	}
+	&__page {
+		padding: 0 3px;
+		display: inline-block;
+		a {
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 2px solid #fff;
+			color:#fff;
+			transition: $trs;
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: none;
+				color: $primColor;
+				background: $secColor;
+			}
+			span {
+				display: block;
+				transform: translateY(-1.5px);
+			}
+		}
+	}
+}

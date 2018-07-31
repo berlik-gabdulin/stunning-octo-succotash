@@ -1,0 +1,30 @@
+$primColor: #11616f;
+$secColor: rgba(255, 255, 255, .5);
+$colorWhite: #fff;
+$colorBlue: #095a77;
+$colorGray: #7B7B7B;
+$colorGrayL: #F6F6F6;
+$colorGrayD: #707070;
+
+$font: "NerisLight", Verdana, Arial, Serif;
+$fontSB: "NerisSemiBold", Verdana, Arial, Serif;
+$fontL: "NerisThin", Verdana, Arial, Serif;
+$fontHM: "HelveticaNeueMedium", Verdana, Arial, Serif;
+$fontHL: "HelveticaNeueLight", Verdana, Arial, Serif;
+$fontHT: "HelveticaNeueThin", Verdana, Arial, Serif;
+
+$w: 50px;
+$h: $w; 
+
+$trs: .3s ease-in-out;
+
+$small: "screen and (max-width: 480px)";
+$medium: "screen and (max-width: 1300px)";
+
+@media #{$small} {
+
+}
+
+@media #{$medium} {
+	
+}

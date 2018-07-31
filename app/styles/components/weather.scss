@@ -1,0 +1,58 @@
+.weather {
+	&__wrp {
+
+	}
+	&__icon {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		&Wrp {
+			padding-top: 25px;
+			margin-bottom: 25px;
+			width: 112px;
+			float: left;
+		}
+	}
+	&__info {
+		padding-top: 10px;
+		padding-left: 3px;
+		text-transform: uppercase;
+		float: left;
+	}
+	&__day {
+		font-size: 11px;
+		margin-bottom: 0;
+	}
+	&__temp {
+		margin: -2px 0 1px;
+		font-size: 54px;
+		line-height: 1;
+	}
+	&__location {
+		margin: 0 0 0;
+		font-size: 11px;
+	}
+	&__fut {
+		height: 75px;
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		&Day {
+			padding-top: 12px;
+			width: 25%;
+		}
+		&Title {
+			margin: 10px 0 0;
+			font-family: $fontSB;
+			text-transform: uppercase;
+			color: $primColor;
+			text-align: center;
+			font-size: 14px;
+			line-height: 1;
+		}
+		img {
+			display: block;
+			margin: 0 auto ;
+		}
+	}
+}

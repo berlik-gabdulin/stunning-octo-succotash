@@ -1,0 +1,28 @@
+block header
+	header.header
+		.container
+			.logo__wrp.clearfix
+				img.logo(src="img/logo.png")
+
+			.row
+				nav.col-md-8.col-md-4-pull.col-md-12.navbar
+					//- кнопка меню
+					button.border.menuTgl(type="button")
+						span.menuTgl__top
+						span.menuTgl__middle
+						span.menuTgl__bot
+					//- меню
+					ul.nav.border
+						li.nav__item
+							a.nav__link(href="#") News
+						li.nav__item
+							a.nav__link(href="#") Blog
+						li.nav__item
+							a.nav__link(href="#") About
+						li.nav__item
+							a.nav__link(href="#") Contacts
+				.search__wrp.col-md-4.col-md-4-push.col-sm-12
+					form.search
+						input.search__input.border(type="text" placeholder="Search")
+						button.search__btn(type="submit")
+							i.fas.fa-search

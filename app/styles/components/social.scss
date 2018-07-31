@@ -1,0 +1,34 @@
+.social {
+	&__wrp {
+
+	}
+	&__list {
+		padding: 0;
+		margin: 0 0 30px;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: block;
+		height: 80px;
+		width: 80px;
+		background: #fff;
+	}
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 40px;
+		line-height: 0;
+		color: $primColor;
+		opacity: .5;
+		height: 100%;
+		width: 100%;
+		transition: $trs;
+		&:hover {
+			color: $primColor;
+			opacity: 1;
+		}
+	}
+}

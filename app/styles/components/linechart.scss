@@ -1,0 +1,44 @@
+.linechart {
+	position: relative;
+	height: 160px;
+	&__wrp {
+
+	}
+	&__line {
+		position: absolute;
+		display: block;
+		height: 1px;
+		background: $secColor;
+		width: 100%;
+		opacity: .15;
+		&:nth-child(1) {
+			top: 20%;
+		}
+		&:nth-child(2) {
+			top: 40%;
+		}
+		&:nth-child(3) {
+			top: 60%;
+		}
+		&:nth-child(4) {
+			top: 80%;
+		}
+	}
+	&__months {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__month {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+		color: #fff;
+		text-transform: uppercase;
+		width: 20%;
+		font-size: 12px;
+	}
+}

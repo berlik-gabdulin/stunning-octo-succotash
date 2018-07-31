@@ -1,0 +1,29 @@
+.blockquote {
+	padding: 23px 30px 20px;
+	margin-bottom: 30px;
+	p {
+		display: inline-block;
+		position: relative;
+		text-align: justify;
+		font-size: 12px;
+		font-family: $fontHL;
+		&:before {
+			content: "“";
+			display: block;
+			font-size: 38px;
+			position: absolute;
+			top: 12px;
+			left: -15px;
+			line-height: 0;
+		}
+		&:after {
+			content: "”";
+			display: inline-block;
+			font-size: 38px;
+			line-height: 0;
+			bottom: -25px;
+			right: -1px;
+			position: relative;
+		}
+	}
+}

@@ -1,0 +1,870 @@
+.btn {
+	// padding: 6px 12px;
+	padding: 14.5px 66px;
+	line-height: inherit;
+	border-radius: 0;
+	font-family: @fontYeseva;
+	.transition-out();
+	&:focus,
+	&:active:focus,
+	&.active:focus,
+	&.focus,
+	&:active.focus,
+	&.active.focus {
+		outline: 0;
+		outline-offset: 0;
+	}
+	&:hover,
+	&:focus,
+	&.focus {
+		color: #333;
+		text-decoration: none;
+		.transition-in();
+	}
+	&:active,
+	&.active {
+		box-shadow: none;
+	}
+	&.active {
+		pointer-events: none;
+	}
+}
+
+// .btn-lg,
+// .btn-group-lg > .btn {
+//   padding: 15px 20px;
+//   font-size: 16px;
+//   border-radius: 0;
+// }
+
+.btn-group-lg > .btn {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 0;
+}
+
+  .btn-group .btn + .btn,
+  .btn-group .btn + .btn-group,
+  .btn-group .btn-group + .btn,
+  .btn-group .btn-group + .btn-group {
+	// margin-left: -1px;
+	margin-right: 15px;
+}
+
+
+.btn-group {
+	@media only screen and (max-width: 480px) {
+		display: flex;
+		justify-content: space-around;
+	}
+	.btn {
+		@media only screen and (max-width: 480px) {
+			padding-left: 0;
+			padding-right: 0;
+			flex: 1;
+		}
+	}
+}
+
+
+// --------------------------------------------------------
+
+.btn-default {
+	color: @colorBlue;
+	background-color: @colorWhite;
+	border-color: @colorWhite;
+	&.btn-bordered {
+		border-color: @colorBlue;
+		&:focus,
+		&.focus,
+		&:hover {
+			border-color: darken(@colorBlue, 15%);
+			color: darken(@colorBlue, 15%);
+			background: @colorWhite;
+		}
+	}
+	&:focus,
+	&.focus {
+		color: @colorBlue;
+		background-color: darken(@colorWhite, 15%);
+		border-color: darken(@colorWhite, 15%);
+	}
+	&:hover {
+		color: @colorBlue;
+		background-color: darken(@colorWhite, 15%);
+		border-color: darken(@colorWhite, 15%);
+	}
+	&:active {
+		color: @colorBlue;
+		background-color: darken(@colorWhite, 15%);
+		border-color: darken(@colorWhite, 15%);
+		&:hover,
+		&:focus,
+		&.focus {
+			color: @colorBlue;
+			background-color: darken(@colorWhite, 15%);
+			border-color: darken(@colorWhite, 15%);
+		}
+	}
+	&.active {
+		color: @colorWhite;
+		background-color: @colorBlue;
+		border-color: @colorWhite;
+		&:hover,
+		&:focus,
+		&.focus {
+			color: @colorWhite;
+			background-color: @colorBlue;
+			border-color: @colorWhite;
+		}
+	}
+	&.disabled,
+	&[disabled] {
+		&:hover,
+		&:focus,
+		&.focus {
+			background-color: lighten(@colorWhite, 15%);
+			border-color: lighten(@colorWhite, 15%);
+		}
+	}
+	.badge {
+		color: @colorWhite;
+		background-color: @colorBlue;
+	}
+}
+
+
+
+.open {
+	> .dropdown-toggle {
+		&.btn-default {
+			color: @colorBlue;
+			background-color: @colorWhite;
+			border-color: @colorWhite;
+			:hover,
+			:focus,
+			.focus {
+				color: @colorBlue;
+				background-color: darken(@colorWhite, 15%);
+				border-color: darken(@colorWhite, 15%);
+			}
+		}
+	}
+}
+
+fieldset {
+	&[disabled] {
+		.btn-default {
+			&:hover,
+			&:focus,
+			&.focus {
+				background-color: lighten(@colorWhite, 15%);
+				border-color: lighten(@colorWhite, 15%);
+			}
+		}
+	}
+}
+
+// --------------------------------------------------------
+
+.btn-primary {
+	color: @colorWhite;
+	background-color: @colorBlue;
+	border-color: @colorBlue;
+	&:focus,
+	&.focus {
+		color: @colorWhite;
+		background-color: darken(@colorBlue, 15%);
+		border-color: darken(@colorBlue, 15%);
+	}
+	&:hover {
+		color: @colorWhite;
+		background-color: darken(@colorBlue, 15%);
+		border-color: darken(@colorBlue, 15%);
+	}
+	&:active {
+		color: @colorWhite;
+		background-color: darken(@colorBlue, 15%);
+		border-color: darken(@colorBlue, 15%);
+		&:hover,
+		&:focus,
+		&.focus {
+			color: @colorWhite;
+			background-color: darken(@colorBlue, 15%);
+			border-color: darken(@colorBlue, 15%);
+		}
+	}
+	&.active {
+		color: @colorBlue;
+		background-color: @colorWhite;
+		border-color: @colorBlue;
+		&:hover,
+		&:focus,
+		&.focus {
+			color: @colorBlue;
+			background-color: @colorWhite;
+			border-color: @colorBlue;
+		}
+	}
+	&.disabled,
+	&[disabled] {
+		&:hover,
+		&:focus,
+		&.focus {
+			background-color: lighten(@colorBlue, 15%);
+			border-color: lighten(@colorBlue, 15%);
+		}
+	}
+	.badge {
+		color: @colorBlue;
+		background-color: @colorWhite;
+	}
+}
+
+
+
+.open {
+	> .dropdown-toggle {
+		&.btn-primary {
+			color: @colorWhite;
+			background-color: @colorBlue;
+			border-color: @colorBlue;
+			:hover,
+			:focus,
+			.focus {
+				color: @colorWhite;
+				background-color: darken(@colorBlue, 15%);
+				border-color: darken(@colorBlue, 15%);
+			}
+		}
+	}
+}
+
+fieldset {
+	&[disabled] {
+		.btn-primary {
+			&:hover,
+			&:focus,
+			&.focus {
+				background-color: lighten(@colorBlue, 15%);
+				border-color: lighten(@colorBlue, 15%);
+			}
+		}
+	}
+}
+
+// // --------------------------------------------------------
+
+// .btn-success {
+// 	color: @colorWhite;
+// 	background-color: @brand-success;
+// 	border-color: @brand-success;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-success, 15%);
+// 		border-color: darken(@brand-success, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-success, 15%);
+// 		border-color: darken(@brand-success, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-success, 15%);
+// 		border-color: darken(@brand-success, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-success, 15%);
+// 			border-color: darken(@brand-success, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-success;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-success;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-success;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-success;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-success, 15%);
+// 			border-color: lighten(@brand-success, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-success;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-success {
+// 			color: @colorWhite;
+// 			background-color: @brand-success;
+// 			border-color: @brand-success;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-success, 15%);
+// 				border-color: darken(@brand-success, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-success {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-success, 15%);
+// 				border-color: lighten(@brand-success, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+
+// // --------------------------------------------------------
+
+// .btn-info {
+// 	color: @colorWhite;
+// 	background-color: @brand-info;
+// 	border-color: @brand-info;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-info, 15%);
+// 		border-color: darken(@brand-info, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-info, 15%);
+// 		border-color: darken(@brand-info, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-info, 15%);
+// 		border-color: darken(@brand-info, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-info, 15%);
+// 			border-color: darken(@brand-info, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-info;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-info;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-info;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-info;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-info, 15%);
+// 			border-color: lighten(@brand-info, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-info;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-info {
+// 			color: @colorWhite;
+// 			background-color: @brand-info;
+// 			border-color: @brand-info;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-info, 15%);
+// 				border-color: darken(@brand-info, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-info {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-info, 15%);
+// 				border-color: lighten(@brand-info, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// // --------------------------------------------------------
+
+// .btn-warning {
+// 	color: @colorWhite;
+// 	background-color: @brand-warning;
+// 	border-color: @brand-warning;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-warning, 15%);
+// 		border-color: darken(@brand-warning, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-warning, 15%);
+// 		border-color: darken(@brand-warning, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-warning, 15%);
+// 		border-color: darken(@brand-warning, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-warning, 15%);
+// 			border-color: darken(@brand-warning, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-warning;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-warning;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-warning;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-warning;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-warning, 15%);
+// 			border-color: lighten(@brand-warning, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-warning;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-warning {
+// 			color: @colorWhite;
+// 			background-color: @brand-warning;
+// 			border-color: @brand-warning;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-warning, 15%);
+// 				border-color: darken(@brand-warning, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-warning {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-warning, 15%);
+// 				border-color: lighten(@brand-warning, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// // --------------------------------------------------------
+
+// .btn-danger {
+// 	color: @colorWhite;
+// 	background-color: @brand-danger;
+// 	border-color: @brand-danger;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-danger, 15%);
+// 		border-color: darken(@brand-danger, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-danger, 15%);
+// 		border-color: darken(@brand-danger, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-danger, 15%);
+// 		border-color: darken(@brand-danger, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-danger, 15%);
+// 			border-color: darken(@brand-danger, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-danger;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-danger;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-danger;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-danger;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-danger, 15%);
+// 			border-color: lighten(@brand-danger, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-danger;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-danger {
+// 			color: @colorWhite;
+// 			background-color: @brand-danger;
+// 			border-color: @brand-danger;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-danger, 15%);
+// 				border-color: darken(@brand-danger, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-danger {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-danger, 15%);
+// 				border-color: lighten(@brand-danger, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// // --------------------------------------------------------
+
+// .btn-upload {
+// 	color: @colorWhite;
+// 	background-color: @brand-upload;
+// 	border-color: @brand-upload;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-upload, 15%);
+// 		border-color: darken(@brand-upload, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-upload, 15%);
+// 		border-color: darken(@brand-upload, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-upload, 15%);
+// 		border-color: darken(@brand-upload, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-upload, 15%);
+// 			border-color: darken(@brand-upload, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-upload;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-upload;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-upload;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-upload;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-upload, 15%);
+// 			border-color: lighten(@brand-upload, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-upload;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-upload {
+// 			color: @colorWhite;
+// 			background-color: @brand-upload;
+// 			border-color: @brand-upload;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-upload, 15%);
+// 				border-color: darken(@brand-upload, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-upload {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-upload, 15%);
+// 				border-color: lighten(@brand-upload, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// // --------------------------------------------------------
+
+// .btn-download {
+// 	color: @colorWhite;
+// 	background-color: @brand-download;
+// 	border-color: @brand-download;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-download, 15%);
+// 		border-color: darken(@brand-download, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-download, 15%);
+// 		border-color: darken(@brand-download, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-download, 15%);
+// 		border-color: darken(@brand-download, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-download, 15%);
+// 			border-color: darken(@brand-download, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-download;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-download;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-download;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-download;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-download, 15%);
+// 			border-color: lighten(@brand-download, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-download;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-download {
+// 			color: @colorWhite;
+// 			background-color: @brand-download;
+// 			border-color: @brand-download;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-download, 15%);
+// 				border-color: darken(@brand-download, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-download {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-download, 15%);
+// 				border-color: lighten(@brand-download, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// // --------------------------------------------------------
+
+// .btn-edit {
+// 	color: @colorWhite;
+// 	background-color: @brand-edit;
+// 	border-color: @brand-edit;
+// 	&:focus,
+// 	&.focus {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-edit, 15%);
+// 		border-color: darken(@brand-edit, 15%);
+// 	}
+// 	&:hover {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-edit, 15%);
+// 		border-color: darken(@brand-edit, 15%);
+// 	}
+// 	&:active {
+// 		color: @colorWhite;
+// 		background-color: darken(@brand-edit, 15%);
+// 		border-color: darken(@brand-edit, 15%);
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @colorWhite;
+// 			background-color: darken(@brand-edit, 15%);
+// 			border-color: darken(@brand-edit, 15%);
+// 		}
+// 	}
+// 	&.active {
+// 		color: @brand-edit;
+// 		background-color: @colorWhite;
+// 		border-color: @brand-edit;
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			color: @brand-edit;
+// 			background-color: @colorWhite;
+// 			border-color: @brand-edit;
+// 		}
+// 	}
+// 	&.disabled,
+// 	&[disabled] {
+// 		&:hover,
+// 		&:focus,
+// 		&.focus {
+// 			background-color: lighten(@brand-edit, 15%);
+// 			border-color: lighten(@brand-edit, 15%);
+// 		}
+// 	}
+// 	.badge {
+// 		color: @brand-edit;
+// 		background-color: @colorWhite;
+// 	}
+// }
+
+
+
+// .open {
+// 	> .dropdown-toggle {
+// 		&.btn-edit {
+// 			color: @colorWhite;
+// 			background-color: @brand-edit;
+// 			border-color: @brand-edit;
+// 			:hover,
+// 			:focus,
+// 			.focus {
+// 				color: @colorWhite;
+// 				background-color: darken(@brand-edit, 15%);
+// 				border-color: darken(@brand-edit, 15%);
+// 			}
+// 		}
+// 	}
+// }
+
+// fieldset {
+// 	&[disabled] {
+// 		.btn-edit {
+// 			&:hover,
+// 			&:focus,
+// 			&.focus {
+// 				background-color: lighten(@brand-edit, 15%);
+// 				border-color: lighten(@brand-edit, 15%);
+// 			}
+// 		}
+// 	}
+// }

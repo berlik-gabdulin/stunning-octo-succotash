@@ -1,0 +1,178 @@
+.comments {
+	&__wrp {
+
+	}
+	&__avatar {
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+		float: left;
+		overflow: hidden;
+		border-radius: 50%;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__comment {
+		padding: 14px 16px;
+		margin-bottom: 10px;
+		&Reply {
+			position: relative;
+			margin-left: 40px;
+			width: calc(100% - 40px);
+			@media #{$small} {
+				margin-left: 10px;
+				width: calc(100% - 10px);
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 16px;
+				top: -10px;
+				left: 12px;
+				height: 7px;
+				background: url(../img/arrows.png) top center no-repeat;
+
+			}
+		}
+	}
+	&__content {
+		float: left;
+		@media #{$small} {
+			margin-top: 15px;
+			width: 100%;
+
+		}
+
+	}
+	&__name {
+		margin: 0;
+		font-family: $fontSB;
+		font-size: 14px;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	&__message {
+		margin-top: 6px;
+		font-family: $fontHL;
+		font-size: 12px;
+	}
+	&__info {
+		margin-top: 6px;
+		font-family: $fontHT;
+		font-size: 12px;
+		button {
+			display: inline-block;
+			position: relative;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			float: left;
+			opacity: .5;
+			transition: $trs;
+			transform: scale(1);
+			&:hover,
+			&:active,
+			&:focus {
+				opacity: 1;
+				transform: scale(1.1);
+
+			}
+		}
+		span {
+			float: left;
+			opacity: .5;
+		}
+	}
+	&__date {
+		display: inline-block;
+		margin-right: 25px;
+		float: left;
+		opacity: .5;
+	}
+	&__like {
+		padding-right: 28px;
+		svg {
+			position: absolute;
+			top: 50%;
+			font-size: 20px;
+			right: 9px;
+			transform: translateY(-50%);
+		}
+	}
+	&__dislike {
+		padding-left: 28px;
+		svg {
+			position: absolute;
+			top: 50%;
+			font-size: 20px;
+			left: 9px;
+			transform: translateY(-50%);
+		}
+	}
+	&__reply {
+		margin-left: 10px;
+		padding-left: 18px;
+		svg {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 15px;
+		}
+	}
+	&__text {
+		display: block;
+		margin-top: 10px;
+		padding: 0 5px;
+		border: 4px solid #fff;
+		margin-right: 9px;
+		width: 350px;
+		height: 100px;
+		resize: none;
+		font: $fontL;
+		color: $primColor;
+		text-transform: uppercase;
+		background-color: #fff;
+		transition: $trs;
+		@media #{$small} {
+			width: 100%;
+		}
+
+		&:focus,
+		&:hover,
+		&:active {
+			font: $font;
+			& + label {
+				opacity: 1;
+			}
+			&::placeholder {
+				opacity: 1;
+			}
+		}
+		&::placeholder {
+			opacity: .5;
+			color: $primColor;
+			transition: $trs;
+		}
+	}
+	&__button {
+		display: block;
+		margin-top: 10px;
+		height: 40px;
+		width: 96px;
+		border: none;
+		background: #fff;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: $primColor;
+		transition: $trs;
+		@media #{$small} {
+			width: 100%;
+		}
+	}
+}

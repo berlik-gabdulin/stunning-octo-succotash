@@ -1,0 +1,18 @@
+.navbar {
+	.nav {
+		padding: 0;
+		&Item {
+			list-style-type: none;
+			padding: 0;
+		}
+		&Link {
+			display: inline-block;
+			font-size: 14px;
+			color: $colorGray;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

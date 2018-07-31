@@ -1,0 +1,143 @@
+.news {
+
+	&__wrp {
+		@media #{$small} {
+			margin-bottom: 30px;
+		}
+
+	}
+	&__tabs {
+		float: left;
+		padding: 14px 16px 0;
+	}
+	&__tab {
+		padding: 0 0 2px;
+		margin-right: 25px;
+		background-color: transparent;
+		border: none;
+		font-size: 18px;
+		border-bottom: 2px solid transparent;
+		text-transform: uppercase;
+		transition: $trs;
+		&:hover,
+		&.active {
+			border-bottom: 2px solid #fff;
+		}
+	}
+	&__all {
+		float: right;
+		margin-top: 22px;
+		margin-right: 16px;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #fff;
+		&:hover {
+			color: #fff;
+			opacity: .8;
+			text-decoration: none;
+		}
+		span {
+
+			padding-left: 9px;
+			font-size: 12px;
+		}
+	}
+	&__content {
+		&Wrp {
+			float: none;
+			clear: both;
+		}
+		&Box {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		min-height: 384px;
+		// max-height: 400px;
+		// overflow-y: scroll;
+		// &::-webkit-scrollbar {
+		// 	width: 5px;
+		// 	background-color: transparent;
+		// 	&-thumb {
+		// 		background-color: $primColor;
+		// 	}
+		// 	&-track {
+		// 		background-color: transparent;
+		// 		width: 5px;
+		// 	}
+		// }
+	}
+	&__item {
+		padding: 20px 16px 14px;
+		border-bottom: 1px solid $secColor;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		&:hover .news__info {
+			opacity: 1;
+		}
+	}
+	&__link {
+		color: #fff;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+			> .news__item {
+				background: $secColor;
+			}
+		}
+	}
+	&__img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		&Wrp {
+			margin-right: 20px;
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			float: left;
+		}
+	}
+	&__title {
+		font-size: 12px;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	&__excerpt {
+		font-family: $fontHT;
+		font-size: 12px;
+	}
+	&__info {
+		opacity: .7;
+		margin-top: 10px;
+		float: none;
+		clear: both;
+		width: 100%;
+		font-size: 12px;
+		font-family: $fontHL;
+		transition: $trs;
+	}
+	&__date {
+		padding-left: 20px;
+		background: url(../img/clock.png) left center no-repeat;
+		
+	}
+	&__views {
+		margin-left: 15px;
+		padding-left: 20px;
+		background: url(../img/eye.png) left center no-repeat;
+		float: right;
+	}
+	&__comments {
+		padding-left: 20px;
+		background: url(../img/bubble.png) left center no-repeat;
+		float: right;
+	}
+}

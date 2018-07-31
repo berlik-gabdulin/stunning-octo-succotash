@@ -1,0 +1,170 @@
+.controls {
+	&__wrp {
+
+	}
+	&__input {
+		display: none;
+		& + label {
+			position: relative;
+			display: block;
+			margin-bottom: 15px;
+			width: 60px;
+			height: 30px;
+			border-radius: 15px;
+			font-size: 0;
+			cursor: pointer;
+			background-color: transparent;
+			transition: $trs;
+			overflow: hidden;
+			span {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 20px;
+				height: 20px;
+				border-radius: 10px;
+				background: #fff;
+				top: 50%;
+				left: 3px;
+				transform: translateY(-50%);
+				transition: $trs;
+			}
+			&:before {
+				position: absolute;
+				top: 5px;
+				left: -21px;
+				content: 'on';
+				text-transform: uppercase;
+				font-family: $fontSB;
+				color: $primColor;
+				font-size: 11px;
+				display: block;
+				transition: $trs;
+			}
+			&:after {
+				position: absolute;
+				top: 5px;
+				right: 6px;
+				content: 'off';
+				text-transform: uppercase;
+				color: #88b0b7;
+				font-size: 11px;
+				display: block;
+				transition: $trs;
+			}
+		}
+		&:checked + label {
+			background: $secColor;
+			span {
+				left: 33px;
+			}
+			&:before {
+				left: 8px;
+			}
+			&:after {
+				right: -35px;
+			}
+		}
+	}
+	&__select {
+		position: relative;
+		display: block;
+		padding: 0 10px;
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background-color: transparent;
+		appearance:none;
+		background:transparent url(../img/selectcaret.png) right center no-repeat;
+		option {
+			background-color: transparent;
+			color: $primColor;
+		}
+	}
+	&__radio {
+		display: none;
+		&Wrp {
+			width: 60px;
+			text-align: center;
+		}
+		& + label {
+			display: inline-block;
+			position: relative;
+			width: 20px;
+			cursor: pointer;
+			font-size: 0;
+			&:before {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 20px;
+				height: 20px;
+				border: 2px solid #fff;
+				border-radius: 50%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:after {
+				position: absolute;
+				opacity: 0;
+				content: '';
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background: #fff;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: $trs;
+			}
+		}
+		&:checked + label {
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+	&__addremove {
+		display: inline-flex;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		width: 20px;
+		height: 20px;
+		font-family: $fontSB;
+		font-size: 10px;
+		color: #fff;
+		border-radius: 50%;
+		&:hover,
+		&:focus,
+		&:active {
+			background: $secColor;
+			color: $primColor;
+		}
+	}
+	&__checkbox {
+		display: none;
+		&Wrp {
+			width: 60px;
+			text-align: center;
+		}
+		& + label {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			font-size: 12px;
+			color: transparent;
+			transition: $trs;
+			cursor: pointer;
+			span {
+				font-size: 0;
+			}
+		}
+		&:checked + label {
+			color: #fff;
+		}
+	}
+}

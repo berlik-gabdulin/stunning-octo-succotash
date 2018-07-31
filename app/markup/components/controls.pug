@@ -1,0 +1,42 @@
+.controls__wrp
+	.controls
+		.row
+			.col-md-4.col-xs-4
+					input.controls__input(type="checkbox" id="checkbox1")
+					label.border-reg(for="checkbox1") checkbox1
+						span
+			.col-md-4.col-xs-4
+					input.controls__input(type="checkbox" id="checkbox2")
+					label.border-reg(for="checkbox2") checkbox2
+						span
+			.col-md-4.col-xs-4
+				select.controls__select.border-reg
+					option.controls__option(value="1") 1
+					option.controls__option(value="2") 2
+					option.controls__option(value="3") 3
+					option.controls__option(value="4") 4
+					option.controls__option(value="5") 5
+		.row
+			.col-md-4.col-xs-4
+				.controls__radioWrp
+					input.controls__radio(type="radio" name="controls__radio" id="radio1")
+					label(for="radio1") radio1
+					input.controls__radio(type="radio" name="controls__radio" id="radio2")
+					label(for="radio2") radio2
+			.col-md-4.col-xs-4
+				button.controls__addremove.border-reg.controls__addremove--close(type="button")
+					i.fas.fa-times
+				button.controls__addremove.border-reg.controls__addremove--add(type="button")
+					i.fas.fa-plus
+				button.controls__addremove.border-reg.controls__addremove.controls__addremove--remove(type="button")
+					i.fas.fa-minus
+			.col-md-4.col-xs-4
+				.controls__checkboxWrp
+					input.controls__checkbox(type="checkbox" id="checkbox3")
+					label.border-reg(for="checkbox3") 
+						span checkbox3
+						i.fas.fa-check
+					input.controls__checkbox(type="checkbox" id="checkbox4")
+					label.border-reg(for="checkbox4") 
+						span checkbox4
+						i.fas.fa-check

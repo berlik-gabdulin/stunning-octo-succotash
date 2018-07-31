@@ -1,0 +1,48 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			.col-md-4.col-sm-12
+				include ../components/profile
+				include ../components/controls
+				include ../components/loader
+				include ../components/music-controls
+			.col-md-4.col-sm-12
+				include ../components/login
+			.col-md-4.col-sm-12
+				include ../components/calendar
+				include ../components/progressbar
+		.row
+			.col-md-4.col-sm-6.col-xs-12
+				include ../components/weather
+				include ../components/pagination
+				include ../components/linechart
+				include ../components/navcontrol
+				include ../components/userprofile
+				include ../components/blockquote
+			.col-md-8.col-sm-6.col-xs-12
+				include ../components/video
+				include ../components/music-player
+				.row
+					.col-md-6
+						include ../components/callback
+					.col-md-6
+						include ../components/bars
+						include ../components/cats
+						include ../components/social
+						include ../components/offer
+
+		.row
+			.col-md-8.col-sm-12
+				include ../components/slider
+				include ../components/statisticBars
+				include ../components/join
+			.col-md-4.col-xs-12
+				include ../components/stat
+
+		.row.clearfix
+			.col-md-5.col-sm-12
+				include ../components/news
+			.col-md-7.col-sm-12
+				include ../components/comments

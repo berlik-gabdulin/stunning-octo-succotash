@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta id="main-viewport" name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow, archive">
+    <meta name="googlebot" content="index, follow, archive">
+    <meta name="yandex" content="index, follow, archive">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Grani.Art">
+    <meta name="application-name" content="Grani.Art">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#095a77">
+    <title>Start template</title><!--[if IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script><![endif]-->
+<!--[if IE]>
+    <style type="text/css">
+      html {
+      		margin-right: 17px !important;
+      	}
+    </style><![endif]-->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="js/ghindaVideoPlayer.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo__wrp clearfix"><img class="logo" src="img/logo.png"></div>
+        <div class="row">
+          <nav class="col-md-8 col-md-4-pull col-md-12 navbar">
+            <button class="border menuTgl" type="button"><span class="menuTgl__top"></span><span class="menuTgl__middle"></span><span class="menuTgl__bot"></span></button>
+            <ul class="nav border">
+              <li class="nav__item"><a class="nav__link" href="#">News</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="search__wrp col-md-4 col-md-4-push col-sm-12">
+            <form class="search">
+              <input class="search__input border" type="text" placeholder="Search">
+              <button class="search__btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="profile__wrp">
+              <div class="profile">
+                <div class="profile__header border" type="button">
+                  <div class="profile__avatarWrp"><img class="profile__avatar" src="img/user__avatar.png" alt=""></div>
+                  <p class="profile__name" title="Jerry Helfeld">Jerry Helfeld</p>
+                  <button class="profile__btn"><i class="fas fa-caret-down"></i></button>
+                </div>
+                <ul class="profile__menu border">
+                  <li class="profile__menuItem"><a class="profile__menuLink" href="#">Your profile<span>5</span></a></li>
+                  <li class="profile__menuItem"><a class="profile__menuLink" href="#">Settings</a></li>
+                  <li class="profile__menuItem"><a class="profile__menuLink" href="#">LogOut</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="controls__wrp">
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-4 col-xs-4">
+                    <input class="controls__input" type="checkbox" id="checkbox1">
+                    <label class="border-reg" for="checkbox1">checkbox1<span></span></label>
+                  </div>
+                  <div class="col-md-4 col-xs-4">
+                    <input class="controls__input" type="checkbox" id="checkbox2">
+                    <label class="border-reg" for="checkbox2">checkbox2<span></span></label>
+                  </div>
+                  <div class="col-md-4 col-xs-4">
+                    <select class="controls__select border-reg">
+                      <option class="controls__option" value="1">1</option>
+                      <option class="controls__option" value="2">2</option>
+                      <option class="controls__option" value="3">3</option>
+                      <option class="controls__option" value="4">4</option>
+                      <option class="controls__option" value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 col-xs-4">
+                    <div class="controls__radioWrp">
+                      <input class="controls__radio" type="radio" name="controls__radio" id="radio1">
+                      <label for="radio1">radio1</label>
+                      <input class="controls__radio" type="radio" name="controls__radio" id="radio2">
+                      <label for="radio2">radio2</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-4">
+                    <button class="controls__addremove border-reg controls__addremove--close" type="button"><i class="fas fa-times"></i></button>
+                    <button class="controls__addremove border-reg controls__addremove--add" type="button"><i class="fas fa-plus"></i></button>
+                    <button class="controls__addremove border-reg controls__addremove controls__addremove--remove" type="button"><i class="fas fa-minus"></i></button>
+                  </div>
+                  <div class="col-md-4 col-xs-4">
+                    <div class="controls__checkboxWrp">
+                      <input class="controls__checkbox" type="checkbox" id="checkbox3">
+                      <label class="border-reg" for="checkbox3"> <span>checkbox3</span><i class="fas fa-check"></i></label>
+                      <input class="controls__checkbox" type="checkbox" id="checkbox4">
+                      <label class="border-reg" for="checkbox4"> <span>checkbox4</span><i class="fas fa-check"></i></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="loader__wrp">
+              <div class="loader">
+                <div class="loader__container"></div>
+                <p class="loader__value">80<span>%</span></p>
+              </div>
+            </div>
+            <div class="music__wrp">
+              <div class="music">
+                <button class="music__backward border-reg" type="button"><i class="fas fa-backward"></i></button>
+                <button class="music__pause border-reg" type="button"><i class="fas fa-pause"></i></button>
+                <button class="music__play border-reg" type="button"><i class="fas fa-play"></i></button>
+                <button class="music__stop border-reg" type="button"><i class="fas fa-stop"></i></button>
+                <button class="music__forward border-reg" type="button"><i class="fas fa-forward"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="login__wrp">
+              <form class="login border">
+                <div class="login__imgWrp clearfix"><img class="login__img" src="img/user__avatar.png" alt=""></div>
+                <div class="login__input login__input--user border reg">
+                  <input type="text" placeholder="username">
+                  <label><i class="fas fa-user"></i></label>
+                </div>
+                <div class="login__input login__input--pass border reg">
+                  <input type="password" placeholder="password">
+                  <label><i class="fas fa-key"></i></label>
+                </div>
+                <button class="login__submit" type="submit">Login</button>
+                <div class="clearfix">
+                  <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                      <input type="checkbox" id="rememberme">
+                      <label for="rememberme">Remember me</label>
+                    </div>
+                    <div class="col-md-6 col-xs-6"><a class="login__passReminder" href="#">Forgot password?</a></div>
+                  </div>
+                </div>
+                <p>OR</p>
+                <div class="login__socialWrp">
+                  <p>Select social network to get started</p>
+                  <ul class="login__social">
+                    <li class="login__socialItem"><a class="login__socialLink" href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="login__socialItem"><a class="login__socialLink" href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="login__socialItem"><a class="login__socialLink" href=""><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="login__socialItem"><a class="login__socialLink" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="calendar__wrp">
+              <div class="calendar border">
+                <div class="calendar__title border">
+                  <p class="calendar__date">20</p>
+                  <p class="calendar__day">monday</p>
+                </div>
+                <div class="calendar__month">
+                  <p class="calendar__monthSlide">January 2014</p>
+                  <p class="calendar__monthSlide">Fabriary 2014</p>
+                  <p class="calendar__monthSlide">March 2014</p>
+                  <p class="calendar__monthSlide">April 2014</p>
+                  <p class="calendar__monthSlide">May 2014</p>
+                  <p class="calendar__monthSlide">June 2014</p>
+                  <p class="calendar__monthSlide">July 2014</p>
+                  <p class="calendar__monthSlide">August 2014</p>
+                  <p class="calendar__monthSlide">September 2014</p>
+                  <p class="calendar__monthSlide">Oktober 2014</p>
+                  <p class="calendar__monthSlide">November 2014</p>
+                  <p class="calendar__monthSlide">December 2014</p>
+                </div>
+                <ul class="calendar__week">
+                  <li class="calendar__weekDay">mon</li>
+                  <li class="calendar__weekDay">tue</li>
+                  <li class="calendar__weekDay">wed</li>
+                  <li class="calendar__weekDay">thu</li>
+                  <li class="calendar__weekDay">fri</li>
+                  <li class="calendar__weekDay">sat</li>
+                  <li class="calendar__weekDay">sun</li>
+                </ul>
+                <ul class="calendar__dates">
+                  <li class="calendar__datesDay otherMonth"><a href="#"><span>30</span></a></li>
+                  <li class="calendar__datesDay otherMonth"><a href="#"><span>31</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>1</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>2</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>3</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>4</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>5</span></a></li>
+                  <li class="calendar__datesDay cur"><a href="#"><span>6</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>7</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>8</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>9</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>10</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>11</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>12</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>13</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>14</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>15</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>16</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>17</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>18</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>19</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>20</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>21</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>22</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>23</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>24</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>25</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>26</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>27</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>28</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>29</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>30</span></a></li>
+                  <li class="calendar__datesDay"><a href="#"><span>31</span></a></li>
+                  <li class="calendar__datesDay otherMonth"><a href="#"><span>1</span></a></li>
+                  <li class="calendar__datesDay otherMonth"><a href="#"><span>2</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="progressbar__wrp">
+              <div class="range">
+                <label for="amount"></label>
+                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <div id="slider-range"></div>
+                <div class="range__value"><span>0</span><span> </span><span>50</span><span></span><span>100</span><span></span><span>150</span></div>
+              </div>
+              <div class="progressbar">
+                <div class="progressbar__bar"><span></span></div>
+                <p>56% Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="weather__wrp">
+              <div class="weather border">
+                <div class="clearfix">
+                  <div class="weather__iconWrp"><img class="weather__icon" src="img/sun.png" alt=""></div>
+                  <div class="weather__info">
+                    <p class="weather__day">wednesday</p>
+                    <p class="weather__temp">+25&deg;C</p>
+                    <p class="weather__location">New York, USA</p>
+                  </div>
+                </div>
+                <div class="weather__fut clearfix">
+                  <div class="weather__futDay"><img src="img/sundark.png" alt="">
+                    <p class="weather__futTitle">Thu</p>
+                  </div>
+                  <div class="weather__futDay"><img src="img/sundark.png" alt="">
+                    <p class="weather__futTitle">Fri</p>
+                  </div>
+                  <div class="weather__futDay"><img src="img/sundark.png" alt="">
+                    <p class="weather__futTitle">Sat</p>
+                  </div>
+                  <div class="weather__futDay"><img src="img/sundark.png" alt="">
+                    <p class="weather__futTitle">Sun</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination__wrp">
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__page"><a href="#"> <span>&laquo;</span></a></li>
+                  <li class="pagination__page"><a href="#"> <span>&lsaquo;</span></a></li>
+                  <li class="pagination__page"><a href="#">1</a></li>
+                  <li class="pagination__page"><a href="#">2</a></li>
+                  <li class="pagination__page"><a href="#">3</a></li>
+                  <li class="pagination__page">...</li>
+                  <li class="pagination__page"><a href="#">10</a></li>
+                  <li class="pagination__page"><a href="#"> <span>&rsaquo;</span></a></li>
+                  <li class="pagination__page"><a href="#"> <span>&raquo;</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="linechart__wrp">
+              <div class="linechart border"><span class="linechart__line"></span><span class="linechart__line"></span><span class="linechart__line"></span><span class="linechart__line"></span>
+                <div class="linechart__months"><span class="linechart__month">jan</span><span class="linechart__month">feb</span><span class="linechart__month">mar</span><span class="linechart__month">apr</span><span class="linechart__month">may</span></div>
+              </div>
+            </div>
+            <div class="navcontrol"><a class="navcontrol__arrow navcontrol__prev" href="#"><span>Prev</span></a><a class="navcontrol__arrow navcontrol__next" href="#"><span>Next</span></a></div>
+            <div class="userprofile__wrp">
+              <div class="userprofile border">
+                <div class="userprofile__imgWrp clearfix"><img class="userprofile__img" src="img/user__avatar.png" alt=""></div>
+                <h3 class="userprofile__title">
+                  <div class="userprofile__name">Jerry helfeld</div>
+                  <div class="userprofile__pos">lead designer</div>
+                </h3>
+                <button class="userprofile__followBtn">Follow</button>
+                <div class="userprofile__followWrp clearfix">
+                  <div class="userprofile__followers">
+                    <p class="userprofile__followVal">12 564</p>
+                    <p class="userprofile__followSpan">followers</p>
+                  </div>
+                  <div class="userprofile__following">
+                    <p class="userprofile__followVal">732</p>
+                    <p class="userprofile__followSpan">following</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blockquote__wrp">
+              <div class="blockquote border">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptates maiores voluptatibus reprehenderit, dicta quam natus explicabo rem, corporis sit odio magnam, adipisci exercitationem ad beatae impedit dignissimos doloribus quasi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="video__wrp">
+              <div class="video border"><img class="video__preview" src="img/video__preview.png" alt="">
+                <p class="video__title">HAPPY HOLIDAYS FROM HEYLLOW LAB</p>
+                <button class="video__play" type="button"><i class="fas fa-play"></i></button>
+              </div>
+              <div class="video border hidden-xs">
+                <video controls="controls" preload="metadata" width="100%" height="auto" id="video1">
+                  <source src="img/sintel-trailer.ogv#t=20" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+                  <source src="img/sintel-trailer.mp4#t=20" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                </video>
+              </div>
+            </div>
+            <div class="musicPlayer__wrp">
+              <div class="musicPlayer border clearfix">
+                <div class="musicPlayer__coverWrp"><img class="musicPlayer__cover" src="img/music__cover.png" alt=""></div>
+                <button class="musicPlayer__play" type="button"><i class="fas fa-play"></i></button>
+                <div class="musicPlayer__titleWrp">
+                  <div class="musicPlayer__name">ROBERTA FLACK </div>
+                  <div class="musicPlayer__song">CHRISTMAS SONG</div>
+                  <div class="musicPlayer__progressbar"></div>
+                </div>
+                <div class="musicPlayer__mode">
+                  <button class="musicPlayer__repeat"><i class="fas fa-redo"></i></button>
+                  <button class="musicPlayer__shuffle"><i class="fas fa-random"></i></button><span class="musicPlayer__time">04:16</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="callback__wrp">
+                  <div class="callback border">
+                    <h3 class="callback__title">add comment</h3>
+                    <form class="form">
+                      <input class="border-reg callback__input" type="text" placeholder="your name">
+                      <input class="border-reg callback__input" type="text" placeholder="email address">
+                      <textarea class="border-reg callback__input" type="text" placeholder="message"></textarea>
+                      <button class="callback__button" type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="clearfix">
+                  <div class="bars"><span class="bars__bar" data-height="33"><span></span></span><span class="bars__bar" data-height="53"><span></span></span><span class="bars__bar" data-height="83"><span></span></span><span class="bars__bar" data-height="63"><span></span></span><span class="bars__bar" data-height="10"><span></span></span><span class="bars__bar" data-height="24"><span></span></span><span class="bars__bar" data-height="15"><span></span></span><span class="bars__bar" data-height="98"><span></span></span><span class="bars__bar" data-height="40"><span></span></span><span class="bars__bar" data-height="30"><span></span></span></div>
+                  <div class="vslider__wrp">
+                    <div class="vslider vslider1"></div>
+                    <div class="vslider vslider2"></div>
+                    <div class="vslider vslider3"></div>
+                  </div>
+                </div>
+                <div class="cats__wrp clearfix">
+                  <ul class="cats">
+                    <li class="cats__cat"><a class="cats__link" href="#">Graphic</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Retina</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Communication</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Design</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Flat</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Wordpress</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Blog</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Premium</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Web</a></li>
+                    <li class="cats__cat"><a class="cats__link" href="#">Corporate</a></li>
+                  </ul>
+                </div>
+                <div class="social__wrp">
+                  <div class="social">
+                    <ul class="social__list">
+                      <li class="social__item"><a class="social__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="offer__wrp">
+                  <div class="offer">
+                    <div class="offer__item">
+                      <div class="offer__val">$30</div>
+                      <div class="offer__title">started</div>
+                    </div>
+                    <div class="offer__item">
+                      <div class="offer__val">$5</div>
+                      <div class="offer__title">corporate</div>
+                    </div>
+                    <div class="offer__item">
+                      <div class="offer__val">$70</div>
+                      <div class="offer__title">premium</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <div class="slider__wrp">
+              <div class="slider">
+                <div class="slider__slide">
+                  <h3 class="slider__title">Livigno,  bormio and the valtelline valley</h3>
+                  <p class="slider__subtitle">Bormio</p><a class="slider__more" href="#">View more</a><img class="slider__bgimg" src="img/video__preview.png" alt="">
+                </div>
+                <div class="slider__slide">
+                  <h3 class="slider__title">Livigno,  bormio and the valtelline valley</h3>
+                  <p class="slider__subtitle">Bormio</p><a class="slider__more" href="#">View more</a><img class="slider__bgimg" src="img/video__preview.png" alt="">
+                </div>
+                <div class="slider__slide">
+                  <h3 class="slider__title">Livigno,  bormio and the valtelline valley</h3>
+                  <p class="slider__subtitle">Bormio</p><a class="slider__more" href="#">View more</a><img class="slider__bgimg" src="img/video__preview.png" alt="">
+                </div>
+                <div class="slider__slide">
+                  <h3 class="slider__title">Livigno,  bormio and the valtelline valley</h3>
+                  <p class="slider__subtitle">Bormio</p><a class="slider__more" href="#">View more</a><img class="slider__bgimg" src="img/video__preview.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bars__statistic">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="bars__wrp border">
+                    <p class="bars__value">3244
+                      <div class="bars"><span class="bars__bar" data-height="33"><span></span></span><span class="bars__bar" data-height="53"><span></span></span><span class="bars__bar" data-height="83"><span></span></span><span class="bars__bar" data-height="63"><span></span></span><span class="bars__bar" data-height="10"><span></span></span><span class="bars__bar" data-height="24"><span></span></span><span class="bars__bar" data-height="15"><span></span></span><span class="bars__bar" data-height="98"><span></span></span></div>
+                    </p>
+                    <p class="bars__title">Visitors</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="bars__wrp border">
+                    <p class="bars__value">1236
+                      <div class="bars"><span class="bars__bar" data-height="33"><span></span></span><span class="bars__bar" data-height="53"><span></span></span><span class="bars__bar" data-height="83"><span></span></span><span class="bars__bar" data-height="63"><span></span></span><span class="bars__bar" data-height="10"><span></span></span><span class="bars__bar" data-height="24"><span></span></span><span class="bars__bar" data-height="15"><span></span></span><span class="bars__bar" data-height="98"><span></span></span></div>
+                    </p>
+                    <p class="bars__title">Likes</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="bars__wrp border">
+                    <p class="bars__value">238
+                      <div class="bars"><span class="bars__bar" data-height="33"><span></span></span><span class="bars__bar" data-height="53"><span></span></span><span class="bars__bar" data-height="83"><span></span></span><span class="bars__bar" data-height="63"><span></span></span><span class="bars__bar" data-height="10"><span></span></span><span class="bars__bar" data-height="24"><span></span></span><span class="bars__bar" data-height="15"><span></span></span><span class="bars__bar" data-height="98"><span></span></span></div>
+                    </p>
+                    <p class="bars__title">Reposts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="join__wrp">
+              <form class="join">
+                <input class="join__input" type="text" placeholder="Your email">
+                <button class="join__button button" type="submit">Join</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="stat__wrp">
+              <div class="stat__inner">
+                <div class="stat"><img class="stat__map" src="img/map.svg" alt=""><img class="stat__pin" src="img/pin.svg" alt="" title="Smth place on American Map"><img class="stat__pin checked" src="img/pin-2.svg" alt="" title="Smth place on American Map"><img class="stat__pin" src="img/pin.svg" alt="" title="Smth place on American Map">
+                  <ul class="stat__legend">
+                    <li class="stat__legendItem">iOS  44%</li>
+                    <li class="stat__legendItem">ANdroid  32%</li>
+                    <li class="stat__legendItem">windows  19%</li>
+                    <li class="stat__legendItem">symbian  5%</li>
+                  </ul>
+                  <div class="stat__chart"><img class="piechart-1" src="img/piechart-1.png" alt="" title="iOS  44%"><img class="piechart-2" src="img/piechart-2.png" alt="" title="ANdroid  32%"><img class="piechart-3" src="img/piechart-3.png" alt="" title="windows  19%"><img class="piechart-4" src="img/piechart-4.png" alt="" title="symbian  5%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <div class="col-md-5 col-sm-12">
+            <div class="news__wrp">
+              <div class="news border">
+                <div class="news__tabs">
+                  <button class="news__tab active" type="button" data-target="#news">News</button>
+                  <button class="news__tab" type="button" data-target="#popular">Popular</button>
+                </div><a class="news__all" href="#">View all news<span><i class="fas fa-caret-right"></i></span></a>
+                <div class="news__contentWrp clearfix">
+                  <div class="news__contentBox active" id="news">
+                    <ul class="news__list">
+                      <li class="news__item"><a class="news__link clearfix" href="#" target="_blank">
+                          <div class="news__imgWrp"><img class="news__img" src="img/news-1.jpg" alt=""></div>
+                          <div class="news__content">
+                            <div class="news__title">A look inside the Xbox One and PlayStation 4</div>
+                            <div class="news__excerpt">The next generation of console gaming is here. Sony launched its PlayStation 4 ...</div>
+                          </div></a>
+                        <div class="news__info"><span class="news__date">Nov 16, 2013</span><span class="news__views">1244</span><span class="news__comments">14</span></div>
+                      </li>
+                      <li class="news__item"><a class="news__link clearfix" href="#" target="_blank">
+                          <div class="news__imgWrp"><img class="news__img" src="img/news-1.jpg" alt=""></div>
+                          <div class="news__content">
+                            <div class="news__title">Amazon Black Friday 2013 deals</div>
+                            <div class="news__excerpt">In the frantic leadup to Black Friday, every retailer is looking for a way to ...</div>
+                          </div></a>
+                        <div class="news__info"><span class="news__date">Nov 16, 2013</span><span class="news__views">1244</span><span class="news__comments">14</span></div>
+                      </li>
+                      <li class="news__item"><a class="news__link clearfix" href="#" target="_blank">
+                          <div class="news__imgWrp"><img class="news__img" src="img/news-1.jpg" alt=""></div>
+                          <div class="news__content">
+                            <div class="news__title">A look inside the Xbox One and PlayStation 4</div>
+                            <div class="news__excerpt">The next generation of console gaming is here. Sony launched its PlayStation 4 ...</div>
+                          </div></a>
+                        <div class="news__info"><span class="news__date">Nov 16, 2013</span><span class="news__views">1244</span><span class="news__comments">14</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="news__contentBox" id="popular">
+                    <ul class="news__list">
+                      <li class="news__item"><a class="news__link clearfix" href="#" target="_blank">
+                          <div class="news__imgWrp"><img class="news__img" src="img/news-1.jpg" alt=""></div>
+                          <div class="news__content">
+                            <div class="news__title">Amazon Black Friday 2013 deals</div>
+                            <div class="news__excerpt">In the frantic leadup to Black Friday, every retailer is looking for a way to ...</div>
+                          </div></a>
+                        <div class="news__info"><span class="news__date">Nov 16, 2013</span><span class="news__views">1244</span><span class="news__comments">14</span></div>
+                      </li>
+                      <li class="news__item"><a class="news__link clearfix" href="#" target="_blank">
+                          <div class="news__imgWrp"><img class="news__img" src="img/news-1.jpg" alt=""></div>
+                          <div class="news__content">
+                            <div class="news__title">A look inside the Xbox One and PlayStation 4</div>
+                            <div class="news__excerpt">The next generation of console gaming is here. Sony launched its PlayStation 4 ...</div>
+                          </div></a>
+                        <div class="news__info"><span class="news__date">Nov 16, 2013</span><span class="news__views">1244</span><span class="news__comments">14</span></div>
+                      </li>
+                      <li class="news__item"><a class="news__link clearfix" href="#" target="_blank">
+                          <div class="news__imgWrp"><img class="news__img" src="img/news-1.jpg" alt=""></div>
+                          <div class="news__content">
+                            <div class="news__title">Amazon Black Friday 2013 deals</div>
+                            <div class="news__excerpt">In the frantic leadup to Black Friday, every retailer is looking for a way to ...</div>
+                          </div></a>
+                        <div class="news__info"><span class="news__date">Nov 16, 2013</span><span class="news__views">1244</span><span class="news__comments">14</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="comments__wrp">
+              <div class="comments">
+                <div class="comments__comment border clearfix"><a class="comments__avatar" href="#" target="_target"><img src="img/comment1.jpg" alt=""></a>
+                  <div class="comments__content">
+                    <p class="comments__name">michael derris</p>
+                    <p class="comments__message">Glad your system is working, hope you have fun! :) </p>
+                    <div class="comments__info">
+                      <div class="comments__date">2 days ago</div>
+                      <button class="comments__like" type="button">2<i class="fas fa-caret-up"></i></button><span>|</span>
+                      <button class="comments__dislike" type="button">0<i class="fas fa-caret-down"></i></button>
+                      <button class="comments__reply" type="button">Reply<i class="fas fa-reply"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments__comment comments__commentReply border clearfix"><a class="comments__avatar" href="#" target="_target"><img src="img/comment2.jpg" alt=""></a>
+                  <div class="comments__content">
+                    <p class="comments__name">Jena miller</p>
+                    <p class="comments__message">Glad your system is working, hope you have fun! :) </p>
+                    <div class="comments__info">
+                      <div class="comments__date">2 days ago</div>
+                      <button class="comments__like" type="button">2<i class="fas fa-caret-up"></i></button><span>|</span>
+                      <button class="comments__dislike" type="button">0<i class="fas fa-caret-down"></i></button>
+                      <button class="comments__reply" type="button">Reply<i class="fas fa-reply"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments__comment border clearfix">
+                  <div class="comments__avatar"><img src="img/comment3.jpg" alt=""></div>
+                  <div class="comments__content">
+                    <p class="comments__name">michael derris</p>
+                    <textarea class="comments__text" placeholder="Enter your comment"></textarea>
+                    <button class="comments__button" type="submit">Write</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="mfp-hide" id="callback">
+      <div class="callback__wrp">
+        <div class="callback border">
+          <h3 class="callback__title">add comment</h3>
+          <form class="form">
+            <input class="border-reg callback__input" type="text" placeholder="your name">
+            <input class="border-reg callback__input" type="text" placeholder="email address">
+            <textarea class="border-reg callback__input" type="text" placeholder="message"></textarea>
+            <button class="callback__button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="feedbackPopup">
+      <div class="feedback"></div>
+    </div>
+    <div class="popupform call-popup mfp-hide" id="popupformthanks">
+      <h2>Заявка успешно отправлена</h2>
+      <comment>Cпасибо за оставленную вами заявку!</comment>
+    </div>
+    <div class="popupform call-popup mfp-hide" id="popupformerror">
+      <h2>Заявка успешно отправлена</h2>
+      <comment>Cпасибо за оставленную вами заявку!</comment>
+    </div>
+    <noscript>
+      <div class="noscriptWrp">
+        <div class="noscript">
+          <h3 class="noscript__title">Пожалуйста включите JavaScript в настройках Вашего браузера!</h3>
+          <p class="noscript__descr">Как это сделать <a href="https://support.google.com/adsense/answer/12654?hl=ru" target="_blank">посмотрите тут</a></p>
+        </div>
+      </div>
+    </noscript>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.ghindaVideoPlayer.js"></script>
+  </body>
+</html>

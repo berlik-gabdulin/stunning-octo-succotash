@@ -1,0 +1,10 @@
+.video__wrp
+	.video.border
+		img(src="img/video__preview.png", alt="").video__preview
+		p.video__title HAPPY HOLIDAYS FROM HEYLLOW LAB
+		button(type="button").video__play
+			i.fas.fa-play
+	.video.border.hidden-xs
+		video(controls="controls" preload="metadata" width="100%" height="auto" id="video1")
+			source(src="img/sintel-trailer.ogv#t=20" type='video/ogg; codecs="theora, vorbis"')
+			source(src="img/sintel-trailer.mp4#t=20" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')

@@ -1,0 +1,32 @@
+.loader {
+	padding-top: 30px;
+	&__container {
+		display: block;
+		margin: 0 auto;
+		width: 140px;
+		height: 140px;
+		background: url(../img/loader.png) center center no-repeat;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-name: loader;
+		animation-iteration-count: infinite;
+	}
+	&__value {
+		margin-top: -105px;
+		font-size: 50px;
+		text-align: center;
+		span {
+			display: inline-block;
+			font-size: 25px;
+			transform: translateY(-15px);
+		}
+	}
+}
+@keyframes loader {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "grani.art",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https:"
+  },
+  "devDependencies": {
+    "bourbon": "^5.0.0",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cache": "*",
+    "gulp-clean-css": "*",
+    "gulp-group-css-media-queries": "*",
+    "gulp-imagemin": "*",
+    "gulp-less": "*",
+    "gulp-plumber": "*",
+    "gulp-pug": "*",
+    "gulp-rename": "*",
+    "gulp-sort": "^2.0.0",
+    "gulp-uglify": "*",
+    "imagemin-jpeg-recompress": "*",
+    "imagemin-pngquant": "*",
+    "node-bourbon": "^4.2.8"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": ""
+}
